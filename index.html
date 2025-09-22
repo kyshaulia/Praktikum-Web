@@ -4,19 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HotelKaltim.id | Rekomendasi Hotel Samarinda</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
     <h1>Temukan Hotel Terbaik di Samarinda</h1>
     <p>Rekomendasi hotel pilihan dengan harga terbaik dan ulasan terpercaya</p>
-    <form>
-      <label>Lokasi: <input type="text" name="lokasi"></label>
-      <label>Check-in: <input type="date" name="checkin"></label>
-      <label>Check-out: <input type="date" name="checkout"></label>
-      <label>Jumlah tamu: <input type="number" name="tamu"></label><br><br>
-      <button type="submit">Cari Hotel</button>
+    <form class="search-form">
+      <div class="form-group">
+        <label for="lokasi">Lokasi:</label>
+        <input type="text" id="lokasi" name="lokasi">
+      </div>
+
+      <div class="form-group">
+        <label for="checkin">Check-in:</label>
+        <input type="date" id="checkin" name="checkin">
+      </div>
+
+      <div class="form-group">
+        <label for="checkout">Check-out:</label>
+        <input type="date" id="checkout" name="checkout">
+      </div>
+
+      <div class="form-group">
+        <label for="tamu">Jumlah tamu:</label>
+        <input type="number" id="tamu" name="tamu">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Cari Hotel</button>
     </form>
+
   </header>
 
   <nav>
@@ -32,41 +53,45 @@
 
   <main>
     <section>
-      <h2>Rekomendasi Populer</h2>
+  <h2>Rekomendasi Populer</h2>
 
-      <article>
-        <h3>Hotel Mesra Internasional</h3>
-        <img src="hotel-mesra.jpeg" alt="Hotel Mesra Internasional" width="300">
-        <p>⭐⭐⭐⭐</p>
-        <p>Rp 326.000 / malam</p>
-        <a href="">Lihat Detail</a>
-      </article>
+  <div class="hotel-list">
 
-      <article>
-        <h3>Aston Samarinda</h3>
-        <img src="aston.jpeg" alt="Aston Samarinda" width="300">
-        <p>⭐⭐⭐⭐⭐</p>
-        <p>Rp 732.000 / malam</p>
-        <a href="">Lihat Detail</a>
-      </article>
+    <article class="hotel-card card">
+      <h3>Hotel Mesra Internasional</h3>
+      <img src="hotel-mesra.jpeg" alt="Hotel Mesra Internasional" width="450">
+      <p>⭐⭐⭐⭐</p>
+      <p><strong>Rp 326.000</strong> / malam</p>
+      <a href="" class="btn btn-primary">Lihat Detail</a>
+    </article>
 
-      <article>
-        <h3>Amaris Samarinda</h3>
-        <img src="amaris.jpeg" alt="Amaris Samarinda" width="300">
-        <p>⭐⭐⭐⭐</p>
-        <p>Rp 552.000 / malam</p>
-        <a href="">Lihat Detail</a>
-      </article>
-    </section>
+    <article class="hotel-card card">
+      <h3>Aston Samarinda</h3>
+      <img src="aston.jpeg" alt="Aston Samarinda" width="300">
+      <p>⭐⭐⭐⭐⭐</p>
+      <p><strong>Rp 732.000</strong> / malam</p>
+      <a href="" class="btn btn-primary">Lihat Detail</a>
+    </article>
+
+    <article class="hotel-card card">
+      <h3>Amaris Samarinda</h3>
+      <img src="amaris.jpeg" alt="Amaris Samarinda" width="300">
+      <p>⭐⭐⭐⭐</p>
+      <p><strong>Rp 552.000</strong> / malam</p>
+      <a href="" class="btn btn-primary">Lihat Detail</a>
+    </article>
+
+  </div>
+</section>
 
     <section>
       <h2>Kategori Hotel</h2>
-      <ul>
-        <li><a href = "">Hotel Hemat</a></li>
-        <li><a href = "">Hotel Keluarga</a></li>
-        <li><a href = "">Hotel Bisnis</a></li>
-        <li><a href = "">Hotel Mewah</a></li>
-      </ul>
+      <div class="category-list">
+        <a href="" class="btn btn-category">Hotel Hemat</a>
+        <a href="" class="btn btn-category">Hotel Keluarga</a>
+        <a href="" class="btn btn-category">Hotel Bisnis</a>
+        <a href="" class="btn btn-category">Hotel Mewah</a>
+      </div>
     </section>
 
     <section>
@@ -81,15 +106,15 @@
 
     <section>
       <h2>Promo & Diskon</h2>
-      <p>🎉 Diskon 20% untuk pemesanan weekend!</p>
-      <a href="">Pesan Sekarang</a>
+      <p>🎉 Diskon 20% untuk pemesanan weekend!</p><br><br>
+      <a href="" class="btn btn-promo">Pesan Sekarang</a>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 HotelKaltim.id | Semua Hak Dilindungi</p>
-    <p>Hubungi: info@hotelkaltim.id | 0812-2345-7890</p>
+    <p>Hubungi: kyshauliaa | 0812-2345-7890</p>
     <a href="https://www.traveloka.com/id-id/hotel/detail?spec=29-09-2025.30-09-2025.1.1.HOTEL.230554.Aston%20Samarinda%20Hotel%20%26%20Convention%20Center.2&contexts=%7B%22inventoryRateKey%22%3A%22povEwB3ZzsU2C6pd%2B6MdU2B9D%2BXTtnp8xBPheXkh8zcT1Rt8Nbm7lNK7OfWHNhq2fwxXnYiRzoxM4HX9sDmt9%2FAm1AYn3MeGz8Xcpq5hCtgkoYhCABuc4UBUJdDpIzcBkjYFe7E9Hsd3uMKwzSkUl5pNkVNrbZlWauR9OJSMSOhqSdeRrOIJdiNjtKln2V62TUkk5rPlqZNwOAnGnMAJ%2F4%2BbdPKyeEcnUCrwiPsukDU4xJaQCNZd7Dm9H%2BzKz3SoHlBcSNHFk%2B6M%2Bed81rVbweEHGIhg0KJ7gZAJpw17ItAcEtGPm1fxqcNnBgMR8yyW37JGHwGwaHvNlS0Z7FSAy7lS81%2FL314%2BEun2%2FX6YDWiNLAI570pDjkIGC%2BnLzxKIDwdwsYGQWlaxhBsYTfbOupZ%2F4BcR1dMJZnHguitAKG5FKrB06PBGUSFx%2Fop0bxjbmEAQvSMnVoIA9pZMtQ8Ze0TmUfsKSaG4pRlRUA016Gk6lJCofqZhJ0CASfFAoDcsefho0o7KgbsmK2jlIeR2OjRtcdHHo%2FAWwEPDHg90N1R9O21BdVMumhKJ1LZWTYhAqtovf7l7Wh6O7acT8Ie56zkjUbMpMwoD8bDdfSrNvYcFu6mLhBWyl0KopAB4iIuwSpeyFE6LyPmR9InPIcOIPa9W%2FZL61z36XOs5%2BLIfZXvLlY2bwbXDBr3pQ3nIWtbOEllq2k8TUwcX8IVNto3whx8xFQWRurclLB6tBVGAVROpe1sfFCRE4%2ByigqVSZj5bEOongMyVTtB%2FMx1Bp7sd2KSKxzbObtKcuY4r1jUwkgHHYn1IcFFP%2BEBI6rZ9WghjTmBNSfUebjOoRiGbFukAyjyl92baEhjH7KXu%2F3LFvO%2FnEbg8ZhoyBkwKTiSO7Ysj1WdnK7RaxBY0RwQ%2FdLaF5XTfMc4f3QtACGkANInQ8EZTBHGNt8L2mGp8Rp0rA5kZaZaMeZ3CfF6%2F%2BpmgVUZuYkQeLjpwgGsNHeHKBHQBM4W%2BnjIuNGluvgDXPq9w9TYfww2NJnC5r3BqESkLML5pEPILNJbI%2Bh5wf%2FVvxY5ZmRelREEDEI8s3njKtrge8GA5oUEuvYQMAtoRabSzyVcLYyC6zTzfZ4ZS0sjT3wcO9GvTrc8evxJc64EtGRjYhadb%2B4XJefmzEhtX1WVINH%2FW5brnPAVRd2x50y33YFTbAKYCTn%2BP9FwgB9Oal5SwzAogM1fXTpYuCehU7r5zJmn9xWbE6WtdZ3lPmTVcEGVwXGrE06Mr8U8AdDzisy9XcIPZyG7fJO5U9In2%2BEjbNu4T4CDRBKyG42FxY6hUbS4BE4CQE1PS6LUdq4zqfZ4a4M%2FB80u7Q4liAngbufbT7zd%2B1cpRg6qDKKqSTXzuogIV%2Bd9EKDqBt4bTFml7ICgcyMA0%2Fi9r4kCvPP%2BbKQ1okSPsM%2FDwgcYp5P7EtREijgbJCOJvR7v9ZQndoCwa3EW2xFDgtPQAon%2BIjIQd8cIqp%2F3r5Nj7Jv9%2FgpdKTfe7KA5UdBFFAPKi2bZHREXLizPGsTP7NCDrTsXYh52jwCUPZ02SBmFOplm2iqIX5lE2fiZvMtQPcQYPQv6%2FafG2TFpsslvP8CtVN6R9tUjiZX9U2C0z%2BwH5ludrhWtlLFeuY1t7%2BR5rS8Nv%2Bfci0M34kPZ0I1weAC3Wy2mnB16mEp9Tay3Td%2FXvuJwPngnoVu2GjuGTpkQlEILf8eGXEyYnJwY98Sj7Kz57l38xE5OINRl4WeoN5odlm8XNsUkxTBFiiB0dS6u6xx8Jl4j2citaoUsQIRDxP6rScGeb0ePlGwhE3uC%2BNwaL%2Fc9UQA%2BbmTQU2S8XmXk%3D%22%7D&loginPromo=1&prevSearchId=1843323253324545659">Referensi</a>
-
+  </footer>
 </body>
 </html>
